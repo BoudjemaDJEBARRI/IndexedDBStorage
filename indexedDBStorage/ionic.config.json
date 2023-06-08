@@ -1,0 +1,7 @@
+{
+  "name": "indexedDBStorage",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
