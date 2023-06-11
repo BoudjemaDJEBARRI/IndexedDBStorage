@@ -93,6 +93,10 @@ import { Component } from '@angular/core';
 export class StoragePage {
   constructor(private storageService: StorageService) {}
 
+     storageData: { key: string; value: any }[] = [];
+  
+  //   constructor(private storage: Storage, private router: Router, private storageService : StorageService) {}
+
   async storeData() {
     await this.storageService.set('key', 'value');
   }

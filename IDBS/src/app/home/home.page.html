@@ -1,14 +1,24 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Home
     </ion-title>
   </ion-toolbar>
 </ion-header>
-
 <ion-content [fullscreen]="true">
 
   <div id="container">
-    <ion-button routerLink="/storage">Aller à la page</ion-button>
-  </div>
+    <!-- <ion-button routerLink="/storage">Aller à la page</ion-button> -->
+  <ion-button (click)="storeData()">Stocker une valeur</ion-button>
+  <ion-button (click)="getData()">Récupérer une valeur</ion-button>
+  <ion-button (click)="removeData()">Supprimer une valeur</ion-button>
+  <ion-button (click)="clearStorage()">Effacer tous les éléments</ion-button>
+  <ion-button (click)="getKeys()">Récupérer toutes les clés</ion-button>
+  <ion-button (click)="getCount()">Obtenir le nombre total d'éléments stockés</ion-button>
+ </div>
+   <!-- <ion-list>
+    <ion-item *ngFor="let item of storageData">
+      {{ item.key }}: {{ item.value }}
+    </ion-item>
+  </ion-list>  -->
 </ion-content>
