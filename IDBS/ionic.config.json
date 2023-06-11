@@ -1,0 +1,7 @@
+{
+  "name": "IDBS",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

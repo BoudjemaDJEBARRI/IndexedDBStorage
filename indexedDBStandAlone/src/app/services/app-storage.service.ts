@@ -41,5 +41,4 @@ export class AppStorageService {
     let value = await this._storage?.keys();
     return value;
   }
-
 }
