@@ -1,0 +1,7 @@
+{
+  "name": "IndexedDB",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

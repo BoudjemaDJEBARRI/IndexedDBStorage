@@ -1,32 +1,13 @@
-//   constructor(private storage: Storage, private router: Router, private storageService : StorageService) {}
-
-    // // Tableau pour stocker les données du stockage
-    // storageData: { key: string; value: any }[] = [
-    //   { key: 'name', value: 'John' },
-    //   { key: 'age', value: 30 },
-    //   { key: 'city', value: 'New York' },
-    // ];
-
-  // // Méthode pour stocker des données dans le stockage
-  // async storeData() {
-  //   await this.storageService.set('key', 'value');
-  // }
-
-  // // Méthode pour récupérer les données du stockage
-  // async getData() {
-  //   const value = await this.storageService.get('key');
-  //   console.log(value);
-  // }
-
-
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { StorageService } from '../services/storage.service';
+
 @Component({
-  selector: 'app-home',
-  templateUrl: 'home.page.html',
-  styleUrls: ['home.page.scss'],
+  selector: 'app-my-component',
+  templateUrl: './my-component.component.html',
+  styleUrls: ['./my-component.component.scss'],
 })
-export class HomePage {
+export class MyComponentComponent  implements OnInit {
+
   constructor(private storageService: StorageService) { 
     this.getData(); 
   }
@@ -78,4 +59,6 @@ export class HomePage {
     const count = await this.storageService.length();
     console.log(count);
   }
+  ngOnInit() {}
+
 }
